@@ -15,7 +15,4 @@ ActiveRecord::Schema.define(version: 2022_05_27_164129) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-# Could not dump table "resources" because of following StandardError
-#   Unknown type 'unit_of_measurement_type' for column 'unit_of_measurement'
-
 end

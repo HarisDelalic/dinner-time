@@ -5,7 +5,6 @@ class AddUnitOfMeasurementToResources < ActiveRecord::Migration[6.0]
     SQL
     add_column :resources, :unit_of_measurement, :unit_of_measurement_type
   end
-
   def down
     remove_column :resources, :unit_of_measurement
     execute <<-SQL

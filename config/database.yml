@@ -20,6 +20,8 @@ development:
 test:
   <<: *default
   database: postgres-test
+  username: myusername
+  password: mypassword
 
 production:
   <<: *default
