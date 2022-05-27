@@ -1,0 +1,26 @@
+<input type="search" placeholder="Enter name..." data-behavior="autocomplete">
+<br/><br/><br/>
+
+<table>
+  <thead>
+  <tr>
+    <th>Name</th>
+    <th>Quantity</th>
+    <th>Unit of measurement</th>
+    <th colspan="3"></th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <% @resources.each do |resource| %>
+    <tr>
+      <td><%= resource.name %></td>
+      <td><%= resource.quantity %></td>
+      <td><%= resource.unit_of_measurement %></td>
+      <td><%= link_to 'Show', resource %></td>
+      <td><%= link_to 'Edit', edit_resource_path(resource) %></td>
+      <td><%= link_to 'Destroy', resource, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>

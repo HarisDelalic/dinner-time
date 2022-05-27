@@ -1,0 +1,43 @@
+// Place all the styles related to the resources controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+// Place all the styles related to the Carts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.resources {
+  table {
+    border-color: black;
+    border-style: dashed;
+  }
+
+  td {
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+
+  th {
+    border-width: 5em;
+  }
+
+  tfoot {
+    th {
+      font-weight: bold;
+      padding-top: 1em;
+      text-align: right;
+    }
+  }
+
+  input[type="submit"] {
+    border-radius: 0.354em;
+    border: solid thin #441;
+    color: black;
+    font-size: 1em;
+    padding: 0.354em 1em;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #992;
+  }
+}
