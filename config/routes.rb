@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'recipes/index'
   root to: "resources#index"
   resources 'resources', only: [:index, :show, :new, :edit, :create, :update, :destroy] do
     collection do
