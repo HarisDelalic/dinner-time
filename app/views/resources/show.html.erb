@@ -1,2 +1,8 @@
-<h1>Resources#show</h1>
-<p>Find me in app/views/resources/show.html.erb</p>
+<%= @resource.name %>
+<%= @resource.quantity %>
+<%= @resource.unit_of_measurement %>
+
+<%= link_to 'Edit', edit_resource_path(@resource) %>
+<%= link_to 'Destroy', @resource, method: :delete, data: { confirm: 'Are you sure?' } %>
+
+<%= link_to 'All Resources', resources_path %>
