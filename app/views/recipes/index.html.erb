@@ -1,2 +1,36 @@
-<h1>Recipes#index</h1>
-<p>Find me in app/views/recipes/index.html.erb</p>
+<table>
+  <thead>
+  <tr>
+    <th></th>
+    <th>Title</th>
+    <th>Preparation Time</th>
+    <th>Cook Time</th>
+    <th>Ingredients</th>
+    <th>Ratings</th>
+    <th>Category</th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <% @recipes.each do |recipe| %>
+    <tr>
+      <td><%= image_tag recipe.image, size: "64x64" %></td>
+      <td class="align-left"><%= recipe.title %></td>
+      <td><%= recipe.prep_time %></td>
+      <td><%= recipe.cook_time %></td>
+      <td class="align-left">
+        <% recipe.ingredients.each do |ingredient| %>
+          <%= number_with_precision ingredient.quantity, precision: 2 %>
+          <%= ingredient.unit_of_measurement %>
+          <%= ingredient.name %>
+          <br/>
+        <% end %>
+      </td>
+      <td><%= recipe.ratings %></td>
+      <td><%= recipe.category %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+
+<%= will_paginate @recipes %>

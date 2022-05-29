@@ -1,8 +1,8 @@
 class IngredientParser
   # Used when unit of measurement is included in ingredient name, for example 1 TEASPOON salt
-  WITH_UNIT_OF_MEASUREMENT_PATTERN = /([\d+]?\s?)([\u00BC-\u00BE\u2150-\u215E]?)\s+([a-z]+)\s(.*)?/
+  WITH_UNIT_OF_MEASUREMENT_PATTERN = /^([\d+]?\s?)([\u00BC-\u00BE\u2150-\u215E]?)\s+([a-z]+)\s(.*)?/
   # Used when unit of measurement is not included in ingredient name, for example 1 egg (no teaspoon)
-  WITHOUT_UNIT_OF_MEASUREMENT_PATTERN = /([\d+]?\s?)([\u00BC-\u00BE\u2150-\u215E]?)\s+(.*)?/
+  WITHOUT_UNIT_OF_MEASUREMENT_PATTERN = /^([\d+]?\s?)([\u00BC-\u00BE\u2150-\u215E]?)(.*)?/
 
   VULGAR_TO_FLOAT = {
     "¼" => 1.0 / 4.0,

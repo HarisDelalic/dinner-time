@@ -1,3 +1,88 @@
 // Place all the styles related to the recipes controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+.align-left {
+  text-align: left;
+}
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 3px solid purple;
+}
+
+thead th:nth-child(1) {
+  width: 8%;
+}
+
+thead th:nth-child(2) {
+  width: 25%;
+}
+
+thead th:nth-child(3) {
+  width: 10%;
+}
+
+thead th:nth-child(4) {
+  width: 5%;
+}
+
+thead th:nth-child(5) {
+  width: 37%;
+}
+
+thead th:nth-child(6) {
+  width: 5%;
+}
+
+thead th:nth-child(7) {
+  width: 10%;
+}
+
+th, td {
+  padding: 10px;
+}
+
+thead th, tfoot th {
+  font-family: 'Rock Salt', cursive;
+}
+
+th {
+  letter-spacing: 2px;
+}
+
+td {
+  letter-spacing: 1px;
+}
+
+tbody td {
+  text-align: center;
+}
+
+tfoot th {
+  text-align: right;
+}
+
+thead, tfoot {
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
+
+thead th, tfoot th, tfoot td {
+  background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.5));
+  border: 3px solid purple;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: lightgreen;
+}
+
+tbody tr:nth-child(even) {
+  background-color: darkseagreen;
+}
+
+table {
+  background-color: lightgreen;
+}
